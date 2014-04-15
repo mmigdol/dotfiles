@@ -145,8 +145,6 @@ cd() {
 export USE_CCACHE=1
 export CCACHE_DIR=/mnt/ssd/ccache
 
-cd ~/android_src/acer ; . ~/android_src/acer/build/envsetup.sh          
-
 #THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
 #[[ -s "/home/mmigdol/.jenv/bin/jenv-init.sh" ]] && source "/home/mmigdol/.jenv/bin/jenv-init.sh" && source "/home/mmigdol/.jenv/commands/completion.sh"
 
