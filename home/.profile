@@ -37,18 +37,6 @@ alias top=atop
 
 export PATH=$PATH:/opt/broadon/installrepo/install/bin/setconf:$HOME/bin
 
-case $TERM in
-    xterm )
-        export EDITOR='gvim'
-        export VISUAL='gvim'
-        alias vi=gvim
-        ;;
-    * )
-        export EDITOR='vim'
-        export VISUAL='vim'
-        ;;
-esac
-
 if [ -f ~/.profile_local ]
 then
     . ~/.profile_local
