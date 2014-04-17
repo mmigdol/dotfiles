@@ -48,5 +48,10 @@ export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/usr/share/android-ndk
 #export ANDROID_JAVA_HOME=/usr/local/java/bin
 
+export WORKAREA=/home/mmigdol/products
+export BUILDROOT=$WORKAREA/build
+export CLIENT_BUILD_ROOT=$BUILDROOT/swc
+export ROOT=$BUILDROOT/iosroot
+
 #THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
 #[[ -s "/home/mmigdol/.jenv/bin/jenv-init.sh" ]] && source "/home/mmigdol/.jenv/bin/jenv-init.sh" && source "/home/mmigdol/.jenv/commands/completion.sh"
