@@ -10,12 +10,16 @@ alias .5='cd ../../../../..'
 
 alias stop='echo dont stop'
 
-alias js="cd ~/products/sw_i/infra/modules/src/java/com/broadon"
 
 goto_module() {
     cd ~/products/sw_i/infra/modules/$1
 }
+goto_src() {
+    cd ~/products/sw_i/infra/modules/src/java/com/broadon/$1
+}
 alias gm=goto_module
+#alias js="cd ~/products/sw_i/infra/modules/src/java/com/broadon"
+alias js=goto_src
 alias cvm="ssh mmigdol-centosvm"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
