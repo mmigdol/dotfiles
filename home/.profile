@@ -48,7 +48,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:/usr/share/android-ndk
 #export ANDROID_JAVA_HOME=/usr/local/java/bin
 
-// Acer build stuff 
+# Acer build stuff 
 export WORKAREA=/home/mmigdol/products
 export BUILDROOT=$WORKAREA/build
 export CLIENT_BUILD_ROOT=$BUILDROOT/swc
