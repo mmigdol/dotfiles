@@ -51,5 +51,6 @@ set background=dark
 set number
 set mouse=a
 set ttymouse=xterm
+set ignorecase
 
 set softtabstop=4 shiftwidth=4 expandtab
