@@ -1,7 +1,8 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -46,7 +47,7 @@ Bundle "groovy.vim"
 filetype plugin indent on     " required!
 
 set t_Co=256
-colorscheme neo-jungle256
+" colorscheme jungle256
 set background=dark
 set number
 set mouse=a

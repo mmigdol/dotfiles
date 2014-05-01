@@ -23,6 +23,7 @@ alias js=goto_src
 alias cvm="ssh mmigdol-centosvm"
 alias gws="cd ~/products/build/infra/modules/wstest"
 alias hs="homeshick"
+alias gs="git status"
 
 export WORKAREA=/home/mmigdol/products
 export BUILDROOT=$WORKAREA/build
@@ -30,3 +31,4 @@ export CLIENT_BUILD_ROOT=$BUILDROOT/swc
 export ROOT=$BUILDROOT/iosroot
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
