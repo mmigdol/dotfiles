@@ -21,5 +21,7 @@ alias gm=goto_module
 #alias js="cd ~/products/sw_i/infra/modules/src/java/com/broadon"
 alias js=goto_src
 alias cvm="ssh mmigdol-centosvm"
+alias gws="cd ~/products/build/infra/modules/wstest"
+alias hs="homeshick"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
