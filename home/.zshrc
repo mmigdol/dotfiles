@@ -96,6 +96,7 @@ bindkey '^[[5C' emacs-forward-word
 # ssh complete from known_hosts
 zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
+test ~/.zshrc_local && source ~/.zshrc_local
 
 source ~/.commonrc
 
