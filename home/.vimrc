@@ -43,6 +43,8 @@ Bundle "256-jungle"
 " Programming
 Bundle "groovy.vim"
 
+Bundle "nginx.vim"
+
 
 filetype plugin indent on     " required!
 
@@ -55,3 +57,10 @@ set ttymouse=xterm
 set ignorecase
 
 set softtabstop=4 shiftwidth=4 expandtab
+
+autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
+autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
+
+if filereadable("~/.vimrc_mac")
+    source ~/.vimrc_mac
+endif
