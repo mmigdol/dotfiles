@@ -150,3 +150,4 @@ export CCACHE_DIR=/mnt/ssd/ccache
 
 source ~/.commonrc
 
+test -/.bashrc_mac && source ~/.bashrc_mac
