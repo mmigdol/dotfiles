@@ -61,6 +61,7 @@ alias gm=goto_module
 alias js=goto_src
 alias cvm="ssh mmigdol-centosvm -t zsh"
 alias gws="cd ~/products/build/infra/modules/wstest"
+alias gsx="cd ~/products/sw_x"
 alias hs="homeshick"
 alias gs="git status"
 alias gld="cd /opt/broadon/data/svcdrv/logs/"
