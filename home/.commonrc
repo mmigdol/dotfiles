@@ -64,7 +64,10 @@ alias gws="cd ~/products/build/infra/modules/wstest"
 alias hs="homeshick"
 alias gs="git status"
 alias gld="cd /opt/broadon/data/svcdrv/logs/"
-alias getdx="cp $BUILDROOT/release/linux/tests/dxshell/dxshell . ; cp $BUILDROOT/release/linux/gvm_core/daemons/ccd/ccd ."
+function getdx() { 
+   set -x
+   cp "$BUILDROOT/release/linux/tests/dxshell/dxshell" . ; cp "$BUILDROOT/release/linux/gvm_core/daemons/ccd/ccd" .
+}
 alias gidt="cd ~/products/sw_i/tools/idt"
 
 export WORKAREA=/home/mmigdol/products
