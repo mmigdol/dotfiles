@@ -102,4 +102,4 @@ source ~/.commonrc
 
 #export PATH="$HOME/.jenv/bin:$PATH"
 #eval "$(jenv init -)"
-test -/.zshrc_mac && source ~/.zshrc_mac
+test -f -/.zshrc_mac && source ~/.zshrc_mac
