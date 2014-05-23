@@ -1,11 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+ZSH_CUSTOM=~/.zsh-custom
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="mmigdol"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -96,7 +98,10 @@ bindkey '^[[5C' emacs-forward-word
 # ssh complete from known_hosts
 zstyle -e ':completion::*:*:*:hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
-test ~/.zshrc_local && source ~/.zshrc_local
+if [[ -f ~/.zshrc_local ]];
+then
+    source ~/.zshrc_local
+fi    
 
 source ~/.commonrc
 
