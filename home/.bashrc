@@ -151,3 +151,6 @@ export CCACHE_DIR=/mnt/ssd/ccache
 source ~/.commonrc
 
 test -/.bashrc_mac && source ~/.bashrc_mac
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/Daddy/.gvm/bin/gvm-init.sh" ]] && source "/Users/Daddy/.gvm/bin/gvm-init.sh"
