@@ -56,15 +56,28 @@ goto_module() {
 goto_src() {
     cd ~/products/sw_i/infra/modules/src/java/com/broadon/$1
 }
+get_latest_dxshell() {
+    cd ~/dxshell
+    wget -q http://pcstore.ctbg.acer.com/pc/builds_by_MTV/ACT_SDK_TOT/linux/dxshell/dxshell.tar.gz -O dxshell.tar.gz
+    tar xvzf dxshell.tar.gz
+    rm dxshell.tar.gz
+}
+
 alias gm=goto_module
 #alias js="cd ~/products/sw_i/infra/modules/src/java/com/broadon"
 alias js=goto_src
 alias cvm="ssh mmigdol-centosvm -t zsh"
 alias gws="cd ~/products/build/infra/modules/wstest"
 alias gsx="cd ~/products/sw_x"
+alias inf="cd ~/products/sw_i"
 alias hs="homeshick"
 alias gs="git status"
 alias gld="cd /opt/broadon/data/svcdrv/logs/"
+function dxl() {
+   RECENT="`find ~/temp -name \"ccd*.log\" | xargs ls rtd | tail -1`"
+   echo "Most recent log is `ls -l $RECENT`"
+   less $RECENT
+}
 function getdx() { 
    set -x
    cp "$BUILDROOT/release/linux/tests/dxshell/dxshell" . ; cp "$BUILDROOT/release/linux/gvm_core/daemons/ccd/ccd" .
@@ -76,6 +89,14 @@ export BUILDROOT=$WORKAREA/build
 export CLIENT_BUILD_ROOT=$BUILDROOT/swc
 export ROOT=$BUILDROOT/iosroot
 export PRODUCT=linux
+export SWI=$WORKAREA/sw_i
+export PDT=$SWI/tools/pdt
+
+stashgrep() {
+  for i in `git stash list | awk -F ':' '{print $1}'`; do
+    git stash show -p $i | grep -H --label="$i" "$1"
+  done
+}
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 

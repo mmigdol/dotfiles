@@ -60,6 +60,11 @@ set softtabstop=4 shiftwidth=4 expandtab
 autocmd BufNewFile,BufRead *.yml.sample set filetype=yaml
 autocmd BufNewFile,BufRead *nginx/**/*.conf,*nginx.conf* set filetype=nginx
 
+set pastetoggle=<F2>
+nmap <F9> :set ignorecase! ignorecase?
+
+set mouse=v
+
 if filereadable("~/.vimrc_mac")
     source ~/.vimrc_mac
 endif
