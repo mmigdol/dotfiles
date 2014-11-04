@@ -65,6 +65,9 @@ nmap <F9> :set ignorecase! ignorecase?
 
 set mouse=v
 
+" if you forget tosudo, :w!! will sudo it for you
+cmap w!! w !sudo tee > /dev/null %
+
 if filereadable("~/.vimrc_mac")
     source ~/.vimrc_mac
 endif
