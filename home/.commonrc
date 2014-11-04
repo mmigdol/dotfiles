@@ -13,7 +13,8 @@ GROOVY_HOME=/usr/share/groovy
 export PATH
 export LD_LIBRARY_PATH
 
-export LESS='-R'
+# i = case-insensitive
+export LESS='-Ri'
 export LESSOPEN='|~/.lessfilter %s'
 
 ## get rid of command not found ##
