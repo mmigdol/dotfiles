@@ -42,7 +42,7 @@ ZSH_THEME="mmigdol"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -74,14 +74,7 @@ export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/share/android-stu
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-export PATH=/usr/local/bin:$PATH:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/lib64/qt-3.3/bin:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/home/mmigdol/bin:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/home/mmigdol/bin
-
-alias gerp=grep
-alias grpe=grep
-
-alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
-
-fpath=(~/products/cnos/depot_tools/zsh-goodies $fpath)
+export PATH="/usr/local/bin:$PATH:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/home/mmigdol/sdk/tools:/usr/lib64/qt-3.3/bin:/usr/local/maven/bin:/usr/share/groovy/bin:/usr/share/griffon/bin:/usr/share/griffon/ant/bin:/opt/google/chrome:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/home/mmigdol/bin:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/opt/gradle/gradle//bin:/usr/java/jdk1.7.0_25/jre/bin:/opt/sublime:/home/mmigdol/sdk/platform-tools:/home/mmigdol/bin"
 
 # These make it so that up/down arrows search history
 autoload -U up-line-or-beginning-search
@@ -111,3 +104,5 @@ test -f -/.zshrc_mac && source ~/.zshrc_mac
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/Daddy/.gvm/bin/gvm-init.sh" ]] && source "/Users/Daddy/.gvm/bin/gvm-init.sh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

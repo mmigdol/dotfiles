@@ -28,6 +28,9 @@ alias mount='mount |column -t'
 alias gerp=grep
 alias grpe=grep
 
+# du human-readable and sorted by size 
+alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
+
 alias top=atop
 
 export PATH=$PATH:/opt/broadon/installrepo/install/bin/setconf:$HOME/bin
